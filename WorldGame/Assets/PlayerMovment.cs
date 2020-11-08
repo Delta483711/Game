@@ -6,20 +6,21 @@ public class PlayerMovment : MonoBehaviour
 {
     public CharacterController controller;
 
+
     public float Speed = 12f;
 
     Vector3 velocity;
     public float gravity = -9.81f;
     public float jumpHeight = 3f;
     public Transform groundCheck;
-    public float groundDistance = 0.4f;
+    public float groundDistance = -2f;
     public LayerMask groundMask;
     bool isGrounded;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
